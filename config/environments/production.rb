@@ -89,15 +89,6 @@ Rails.application.configure do
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
 
-  ActionMailer::Base.smtp_settings = {
-    :address => "smtp.laposte.net",
-    :port => 465,
-    :domain => "laposte.net", #you can also use google.com
-    :authentication => :plain,
-    :user_name => ENV["MAIL_LOGIN"],
-    :password => ENV["MAIL_PWD"],
-  }
-
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
