@@ -5,9 +5,9 @@ require_relative "application"
 Rails.application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-  :address => "smtp.laposte.net",
+  :address => "smtp.gmail.com",
   :port => 465,
-  :domain => "laposte.net", #you can also use google.com
+  :domain => "gmail.com", #you can also use google.com
   :authentication => :plain,
   :user_name => ENV["MAIL_LOGIN"],
   :password => ENV["MAIL_PWD"],
