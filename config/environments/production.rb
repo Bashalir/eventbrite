@@ -15,8 +15,6 @@ Rails.application.configure do
     :authentication => "login",
     :enable_starttls_auto => true,
   }
-  config.action_mailer.default_url_options = { host: 'thp-eventbrite-2020.herokuapp.com', port: 80 }
-
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
