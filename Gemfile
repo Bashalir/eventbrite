@@ -71,6 +71,3 @@ gem "binding_of_caller", "~> 0.8.0", :group => :development
 gem "devise", "~> 4.7"
 
 gem "rails_12factor", "~> 0.0.3", :group => :production
-
-gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails',
-                              :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'

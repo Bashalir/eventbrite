@@ -5,7 +5,8 @@
          <%= current_user.first_name == nil ? "Connecté" : current_user.first_name %>
         </button>
         <div class="ml-3 dropdown-menu" aria-labelledby="dropdownMenuButton">
-           <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete, :class=> "dropdown-item"%>
+           <%= link_to "Mon Profil", user_path(current_user.id), :class=> "dropdown-item"%>
+            <%= link_to "Se déconnecter", destroy_user_session_path , method: :delete, :class=> "dropdown-item"%>
         </div>
       </div>
       <% else %>
