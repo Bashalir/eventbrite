@@ -1,6 +1,6 @@
 
        <% if user_signed_in? %>
-      <div class="dropdown">
+      <div class="dropdown mx-3">
         <button class="ml-3 btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          <%= current_user.first_name == nil ? "Connecté" : current_user.first_name %>
         </button>
@@ -10,7 +10,7 @@
         </div>
       </div>
       <% else %>
-      <div class="dropdown">
+      <div class="dropdown mx-3">
         <button class="ml-3 btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           S'inscrire / Se connecter
         </button>
