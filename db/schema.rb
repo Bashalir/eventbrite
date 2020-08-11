@@ -49,6 +49,4 @@ ActiveRecord::Schema.define(version: 2020_08_11_081106) do
     t.datetime "remember_created_at"
   end
 
-  add_foreign_key "attendances", "events"
-  add_foreign_key "attendances", "users"
 end

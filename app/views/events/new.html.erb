@@ -1,2 +1,6 @@
-<h1>Events#new</h1>
-<p>Find me in app/views/events/new.html.erb</p>
+
+<h3 class="card-title text-center m-4">Create a new event</h3>
+
+<div class="container col-6">
+<%= render partial: "events/form", locals: {gossip: @gossip} %>
+</div>
