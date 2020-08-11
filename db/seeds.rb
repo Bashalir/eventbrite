@@ -5,8 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require "faker"
-Faker::Config.locale = "fr"
+require 'faker'
+Faker::Config.locale = 'fr'
 
 User.destroy_all
 
@@ -14,7 +14,7 @@ ActiveRecord::Base.connection.tables.each do |t|
   ActiveRecord::Base.connection.reset_pk_sequence!(t)
 end
 
-puts "Destoy all Tables and reset primary key"
+puts 'Destoy all Tables and reset primary key'
 
 10.times do
   user = User.new
@@ -25,4 +25,4 @@ puts "Destoy all Tables and reset primary key"
   user.save
 end
 
-puts "Add 10 Users"
+puts 'Add 10 Users'

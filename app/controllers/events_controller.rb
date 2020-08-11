@@ -6,6 +6,7 @@ class EventsController < ApplicationController
   end
 
   def index
+    @events = Event.all
   end
 
   def create
@@ -16,16 +17,15 @@ class EventsController < ApplicationController
       redirect_to event_path(@event.id)
     else
       flash.now[:danger] = "N'arrive pas à sauvegarder."
-      render action: "new"
+      render action: 'new'
     end
   end
 
   def show
+    @event = Event.find(params[:id])
   end
-
 
   def params_event
-    params.require(:event).permit(:start_date, :duration, :title, :description, :price, :location )
+    params.require(:event).permit(:start_date, :duration, :title, :description, :price, :location)
   end
-
 end

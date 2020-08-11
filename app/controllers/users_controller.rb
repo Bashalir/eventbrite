@@ -8,8 +8,6 @@ class UsersController < ApplicationController
   end
 
   def is_admin?
-    if user_signed_in? && !current_user.is_admin
-      redirect_to root_path
-    end
+    redirect_to root_path if user_signed_in? && !current_user.is_admin
    end
 end

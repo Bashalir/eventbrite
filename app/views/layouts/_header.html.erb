@@ -1,6 +1,6 @@
 <header>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-  <a class="navbar-brand">Eventbrite</a>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #f2f2f2;">
+  <%= link_to "Eventbrite", root_path, :class=>"navbar-brand" %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,7 +8,7 @@
     <ul class="navbar-nav">
      
     </ul>
-      <%= link_to "Organiser un Event !", new_event_path, :class=> "btn btn-primary ml-auto"%>
+      <%= link_to "Organiser un Event !", new_event_path, :class=> "btn btn-outline-primary ml-auto"%>
 
       <%= render "layouts/dropdown" %>
 
