@@ -4,7 +4,7 @@
         
         </button>
         <div class="ml-3 dropdown-menu" aria-labelledby="dropdownMenuButton">
-           <%= link_to "Se déconnecter", "#", method: :delete, :class=> "dropdown-item"%>
+           <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete, :class=> "dropdown-item"%>
         </div>
       </div>
       <% else %>
@@ -13,7 +13,7 @@
           S'inscrire / Se connecter
         </button>
         <div class="ml-3 dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <%= link_to "Se connecter",user_session_path, :class=> "dropdown-item"%>
-          <%= link_to "S'inscrire", new_user_session_path, :class=> "dropdown-item"%>
+          <%= link_to "Se connecter",new_user_session_path, :class=> "dropdown-item"%>
+          <%= link_to "S'inscrire", new_user_registration_path, :class=> "dropdown-item"%>
         </div>
       </div>
