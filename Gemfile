@@ -69,3 +69,5 @@ gem "better_errors", "~> 2.7", :group => :development
 gem "binding_of_caller", "~> 0.8.0", :group => :development
 
 gem "devise", "~> 4.7"
+
+gem "rails_12factor", "~> 0.0.3", :group => :production
