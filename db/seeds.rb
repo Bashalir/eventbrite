@@ -44,4 +44,3 @@ puts "Created #{User.all.size} users"
   event.save
 end
 puts 'Add 20 Events'
-
