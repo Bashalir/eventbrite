@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @event = Event.all
+    @events = Event.find_by admin_id: params[:id]
   end
 
   def is_admin?
